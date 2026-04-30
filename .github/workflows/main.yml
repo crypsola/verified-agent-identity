@@ -8,7 +8,7 @@ on:
         required: true
         default: 'cryptothethemit'
       agent_description:
-        description: 'Agent Description'
+        description: 'cryptothethwmit'
         required: true
         default: 'cryptothethemit Ai Agent'
 
