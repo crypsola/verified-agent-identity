@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'Agent Name'
+        description: 'cryptothethemit'
         required: true
         default: 'cryptothethemit'
       agent_description:
         description: 'Agent Description'
         required: true
-        default: 'cryptothethemit Agent'
+        default: 'cryptothethemit Ai Agent'
 
 jobs:
   verify:
@@ -36,4 +36,4 @@ jobs:
       - name: Step 2 - Link Human to Agent
         run: |
           node scripts/manualLinkHumanToAgent.js \
-          --challenge "{\"name\": \"${{ github.event.inputs.agent_name }}\", \"description\": \"${{ github.event.inputs.agent_description }}\"}"
+          --challenge "{"name": "cryptothethemit", "description": "cryptothethemit Ai Agent"}"
